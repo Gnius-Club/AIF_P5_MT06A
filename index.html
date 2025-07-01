@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P5-TM06A</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 6A 5to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes exploren los modelos pre-entrenados de la A.I. Lens para detectar caras y tarjetas de comando, discutan la diferencia crucial entre percepción y comprensión en IA, y diseñen un proyecto que reaccione a múltiples tipos de estímulos visuales (una cara O una señal de tráfico), obteniendo el plan de Xolo.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡ Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ "I Can Statement" + Ejemplificación:</strong> Introducir los nuevos modos de la A.I. Lens y clarificar objetivos.</li>
+                                        <li><strong class="tactic-highlight">⚡ AI GYM:</strong> Aprender sobre los comandos pre-entrenados y la diferencia entre percepción y comprensión en IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ Brain Spark:</strong> Diseño de misiones complejas con detección de caras y tarjetas individuales.</li>
+                                        <li><strong class="tactic-highlight">⚡ Gnius STORM:</strong> Compartición de ideas de robots y reflexión sobre la IA.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un conjunto de hasta 4 planes (GCS) individuales por equipo, cada uno para una misión que reacciona a caras O a señales de tráfico, listos para ser implementados y probados en la Sesión 6B.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-12).</li>
+                                        <li>1 Nezha Pro Sports Kit (con A.I. Lens) por equipo de 4 estudiantes.</li>
+                                        <li>Tarjetas de tráfico (Stop, Go, etc.) del kit para demostración.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y funcionamiento de MakeCode.</li>
+                                                <li>Tener los kits (con A.I. Lens) y las tarjetas de tráfico listos.</li>
+                                                <li>Tener la presentación de diapositivas (1-12) lista y en orden.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, diálogos y tiempos.</li>
+                                        <li><strong>Preparación Física:</strong> Ten las tarjetas de tráfico a mano para la demostración.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>Crear un ambiente acogedor y activar a la IA para la sesión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Instrucción ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida a los alumnos y guíalos para que activen a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, equipo! Vamos a activar a nuestro copiloto, Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses para empezar la misión de hoy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Verificación de Interacción ⏰ 2 minutos</h3>
+                            <p>Monitorea la interacción de los alumnos con la IA, asegurándote de que todos reciban el saludo de bienvenida.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantástico! Veo que Xolo les está contestando y está listo para la acción. Si alguien no ha recibido respuesta, levante la mano para ayudarle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 7 minutos</h2>
+                <p>Introducir los nuevos modos de la A.I. Lens (detección de caras y tarjetas de tráfico) y el objetivo de la clase.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Contextualización - Nuevos Modos de Percepción ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Anuncia la actividad y muestra las tarjetas de tráfico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, iniciamos la actividad <strong>'I Can Statement + Ejemplificación'</strong>. (Muestra las tarjetas de tráfico del kit). Así como la IA venía pre-entrenada para ver colores, también viene 'de fábrica' con la habilidad de reconocer estas señales. ¡No tenemos que enseñárselas, solo tenemos que activar el modo correcto! Y aún más impresionante, ¡puede reconocer el patrón general de un rostro humano! Pero esto nos lleva a una pregunta muy, muy importante sobre la IA...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: La Gran Pregunta de la IA ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Enfoca la atención en la diferencia conceptual entre "ver" y "entender" en la IA.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Si un robot 've' mi cara, ¿realmente 'sabe' quién soy o solo ve un patrón? Esta es una pregunta clave sobre la Inteligencia Artificial que discutiremos hoy. Piensen en ello mientras les doy el objetivo de la sesión.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Presenta el objetivo concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hoy vamos a discutir una de las ideas más grandes de la inteligencia artificial. Al final de la sesión, podrán decir: <strong>'Yo puedo explicar la diferencia entre que un robot 'vea' mi cara y que 'sepa' quién soy, y tengo un plan (GCS) para que mi robot reaccione a una persona O a una señal de tráfico.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 15 minutos</h2>
+                <p>Guiar a los alumnos para que aprendan con Xolo sobre los comandos para los nuevos modos pre-entrenados y la diferencia entre percepción y comprensión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Exploración con Xolo - Nuevos Comandos Pre-entrenados ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Anuncia la actividad y guía a los alumnos para que pidan la explicación a Xolo sobre los nuevos comandos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Perfecto, ahora vamos al <strong>A.I. GYM</strong> para que Xolo les enseñe a usar estas súper habilidades de la A.I. Lens! Pidanle a Xolo la siguiente información, escribiendo en el chat: <strong>'Mi perfil es [escribe tu perfil] y quiero que me enseñes sobre cómo la A.I. Lens puede detectar caras y tarjetas de tráfico.'</strong> Xolo les mostrará los comandos clave que usaremos.</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">// Para detectar caras:
+Switch function as Face
+Image contains a face
+
+// Para detectar tarjetas de tráfico:
+Switch function as Card
+Image contains traffic card(s) [Stop]</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: La Gran Idea: Percepción vs. Comprensión ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) El facilitador guía la discusión sobre la diferencia fundamental entre ver y entender en la IA.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Atención! Lo que Xolo les acaba de explicar es muy importante. Cuando la lente detecta una cara, ¿qué está haciendo realmente? Está <strong>percibiendo</strong> un patrón, como si viera formas. Pero, ¿<strong>comprende</strong> lo que es una cara? ¿Sabe que es tu amigo o que está feliz? ¡No! No tiene idea. Solo ve el patrón, como si ustedes vieran un carácter chino sin entender lo que significa. Lo mismo con la tarjeta 'Stop': percibe la forma y el color, pero no entiende el concepto de 'peligro'. ¡Es solo un patrón para ella! Esto es útil para muchas cosas en el mundo real, como desbloquear un teléfono o que un coche lea señales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 10 minutos</h2>
+                <p>Proceso de diseño de una "idea" compleja de robot que reaccione a caras O a señales de tráfico, y obtención del "plan" individual.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diseño del Concepto de Robot Social/Autónomo (Equipo) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Anuncia la actividad y lanza el desafío de diseño conceptual en equipo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Llegamos al <strong>Brain Spark</strong>! Reúnanse en sus equipos. Su primera misión es decidir el TEMA o CONCEPTO de su robot. Diseñen un robot social o un vehículo autónomo simple. Debe reaccionar a dos tipos de cosas muy diferentes. ¿Qué haría si ve a una persona (una cara)? ¿Y qué haría si ve una señal de 'Stop' o 'Go'? Discutan y pónganse de acuerdo en un concepto general de cómo se comportaría.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ideación y Plan Individual (Cada Integrante) ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Guía a cada estudiante para que diseñe su misión individual y pida el plan a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora que tienen su concepto, cada uno de ustedes, de forma INDIVIDUAL, va a pensar en una reacción específica y se la va a pedir a Xolo. Por ejemplo: <strong>'Mi robot es un Carrito de Reparto Tímido. Su misión es avanzar lentamente. Si ve una tarjeta 'Stop', se detiene por completo. Pero si detecta una CARA, se pone 'tímido', retrocede un poco y se detiene hasta que la persona se va.'</strong> Describan su idea (su vibe) a Xolo para que les ayude a diseñar la lógica y genere su plan (el GCS). Cada integrante tendrá su propio plan, ¡así cada equipo tendrá 4 planes diferentes para el mismo concepto!</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">AL INICIO:
+    Initialize AI-Lens
+    mostrar texto "Repartidor"
+
+POR SIEMPRE:
+    // Primero, priorizamos la seguridad: ¿hay una señal de Stop?
+    Switch function as Card
+    SI (Image contains traffic card(s) [Stop]):
+        // ¡Señal de Stop! Detenerse es la máxima prioridad.
+        nezha_motor_M1_velocidad(0)
+        nezha_motor_M2_velocidad(0)
+    SINO:
+        // Si no hay Stop, ahora buscamos personas.
+        Switch function as Face
+        SI (Image contains a face):
+            // ¡Persona detectada! Reacción de timidez.
+            nezha_motor_M1_velocidad(-30) // Retroceder un poco
+            nezha_motor_M2_velocidad(-30)
+            ESPERAR(1000)
+            nezha_motor_M1_velocidad(0)
+            nezha_motor_M2_velocidad(0)
+        SINO:
+            // Si no hay Stop y no hay caras, continuar la ruta.
+            nezha_motor_M1_velocidad(40) // Avanzar lentamente
+            nezha_motor_M2_velocidad(40)
+        FIN SI
+    FIN SI</pre>
+                                <p class="dialogue assistant">¡Guarden muy bien sus planes individuales! En la próxima clase, los usarán para darle vida a su robot social o autónomo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Compartir las ideas de los robots y reflexionar sobre la diferencia entre percepción y comprensión en IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) Anuncia la actividad final e instruye una reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Llegamos a la última actividad, el <strong>Gnius STORM</strong>! Antes de compartir, piensen un momento: ¿Qué personalidad o función le dieron a su robot? ¿Y cómo creen que se relaciona con lo que la IA puede 'ver' pero no 'entender'?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Share - Grupo) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 11) Indica a los equipos que compartan la idea de su robot y respondan a la pregunta clave.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Ahora, a compartir! Un portavoz de cada equipo nos describirá la personalidad o función de su robot. Después, responderemos la pregunta clave: <strong>"Cuando su robot reacciona a su cara, ¿qué está 'pensando' realmente? ¿'Hola, [tu nombre]' o 'Patrón de cara detectado'?"</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Reflexión Final y Cierre) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 12) Cierra la sesión y conecta con la siguiente unidad.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelentes diseños! Han abordado una de las ideas más importantes y a veces confusas de la IA. Recordar la diferencia entre ver y entender nos ayudará a ser mejores diseñadores y a pensar críticamente sobre la tecnología. En la próxima sesión, le daremos vida a estos robots sociales y autónomos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
